@@ -1,0 +1,65 @@
+{
+    "products": [
+        {
+            "_id": "product1",
+            "image":"./images/product1.jpeg",
+            "title": "elegant dress",
+            "description": "elegant and sophisticated",
+            "price": 39.99,
+            "sizes": [8, 9, 10]
+        },
+        {
+            "_id": "product3",
+            "image":"./images/product3.jpeg",
+            "title": "opens stiletto",
+            "description": "elegant and sophisticated",
+            "price": 39.99,
+            "sizes": [8, 9, 10]
+        },
+        {
+            "_id": "product4",
+            "image":"./images/product4.jpeg",
+            "title": "shiffon jumsuit",
+            "description": "elegant and sophisticated",
+            "price": 69.99,
+            "sizes": [8, 9, 10, 14, 16, 18]
+
+        },
+        {
+            "_id": "product5",
+            "image":"./images/product5.jpeg",
+            "title": "shiffon jumsuit",
+            "description": "elegant and sophisticated",
+            "price": 69.99,
+            "sizes": [8, 9, 10, 14, 16, 18]
+
+        },
+        {
+            "_id": "product6",
+            "image":"./images/product6.jpeg",
+            "title": "shiffon jumsuit",
+            "description": "elegant and sophisticated",
+            "price": 69.99,
+            "sizes": [8, 9, 10, 14, 16, 18]
+
+        },
+        {
+            "_id": "product7",
+            "image":"./images/product7.jpeg",
+            "title": "shiffon jumsuit",
+            "description": "elegant and sophisticated",
+            "price": 45.99,
+            "sizes": [8, 9, 10, 14, 16, 18]
+
+        },
+        {
+            "_id": "product8",
+            "image":"./images/product8.jpeg",
+            "title": "shiffon jumsuit",
+            "description": "elegant and sophisticated",
+            "price": 59.99,
+            "sizes": [8, 9, 10, 14, 16, 18]
+
+        }
+    ]
+}
