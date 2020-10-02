@@ -4,13 +4,14 @@ html {
           box-sizing: border-box;
   font-size: 62.5%;
   margin: 0;
-  padding: 0;
 }
 
-body {
+body,
+#root {
   margin: 0;
   font-family: "Roboto", sans-serif;
   height: 100vh;
+  font-size: 1.6rem;
 }
 
 .grid-container {
@@ -52,6 +53,26 @@ main {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 60rem;
+          flex: 3 60rem;
+}
+
+.sidebar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 20rem;
+          flex: 1 20rem;
 }
 
 footer {
