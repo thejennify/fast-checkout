@@ -3,6 +3,7 @@ import './index.scss';
 import data from './data.json';
 import Products from './components/Products';
 
+
 class App extends React.Component {
     state = {
         products: data.products,
