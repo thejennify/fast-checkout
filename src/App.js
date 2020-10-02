@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 
+//feature-1
 const App = () => {
     return(
         <div className="grid-container">
