@@ -3,7 +3,7 @@
         {
             "_id": "product1",
             "image":"./images/product1.jpeg",
-            "title": "elegant dress",
+            "title": "Elegant Dress",
             "description": "elegant and sophisticated",
             "price": 39.99,
             "size": [8, 9, 10],
@@ -12,7 +12,7 @@
         {
             "_id": "product3",
             "image":"./images/product3.jpeg",
-            "title": "opens stiletto",
+            "title": "Opens Stiletto",
             "description": "elegant and sophisticated",
             "price": 39.99,
             "size": [8, 9, 10],
@@ -21,7 +21,7 @@
         {
             "_id": "product4",
             "image":"./images/product4.jpeg",
-            "title": "shiffon jumsuit",
+            "title": "Shiffon Jumsuite",
             "description": "elegant and sophisticated",
             "price": 69.99,
             "size": [8, 9, 10, 14, 16, 18],

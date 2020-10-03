@@ -3,6 +3,7 @@ import './index.scss';
 import data from './data.json';
 import Products from './components/Products';
 import Filter from './components/Filter';
+import Cart from './components/Cart'
 
 
 class App extends React.Component {
@@ -10,8 +11,38 @@ class App extends React.Component {
         products: data.products,
         type: '',
         sortRange: '',
-        item: ''
+        item: '',
+        cartItems: []
     };
+
+    //############ functions ##############
+
+    addToCart=(product)=>{
+    //clone cart items
+    const cartItems = this.state.cartItems.slice();
+    let itemInCart = false;
+
+    cartItems.forEach(item => {
+        if (item._id === product._id){
+            item.count++;
+            itemInCart = true;
+        }
+    });
+        if (!itemInCart){
+            cartItems.push({...product, count: 1})
+        }
+        this.setState({cartItems});
+    }
+
+    removeFromCart = (product) =>{
+        //creare a new instance of cartitems inside this function 
+        const cartItems = this.state.cartItems.slice();
+        this.setState({
+            cartItems: cartItems.filter(item => item._id !== product._id)
+        })
+    }
+
+    //lowest to highest and higest to lowest sorting 
     sortProducts = (e) =>{
         const sortValue = e.target.value;
         this.setState({
@@ -28,6 +59,7 @@ class App extends React.Component {
         })    
     } 
 
+    //sort Items by type
     filterProducts = (e) => {
         //if any value is not selected, al products will be displayed
         if(e.target.value === ''){
@@ -38,7 +70,7 @@ class App extends React.Component {
             this.setState({
                 type: e.target.value,
                 products: data.products.filter(product =>
-                    product.type.indexOf(e.target.value)>=0)
+                product.type.indexOf(e.target.value)>=0)
             })
         }
 
@@ -52,18 +84,26 @@ class App extends React.Component {
                 </header>
                 <main>
                     <div className='content'>
-                    <div className='main'>
-                    <Filter 
-                        count={this.state.products.length}
-                        type={this.state.type} 
-                        item={this.state.type}
-                        sortRange={this.state.sortRange}
-                        filterProducts={this.filterProducts}
-                        sortProducts={this.sortProducts}
-                    />
-                    <Products products={this.state.products} />
-                    </div>
-                    <div className='sidebar'>Shopping cart</div>
+                        <div className='main'>
+                            <Filter 
+                                count={this.state.products.length}
+                                type={this.state.type} 
+                                item={this.state.type}
+                                sortRange={this.state.sortRange}
+                                filterProducts={this.filterProducts}
+                                sortProducts={this.sortProducts}
+                            />
+                            <Products 
+                                products={this.state.products}
+                                addToCart={this.addToCart}
+                             />
+                        </div>
+                        <div className='sidebar'>
+                            <Cart 
+                                cartItems={this.state.cartItems}
+                                removeFromCart={this.removeFromCart} 
+                            />
+                        </div>
                     </div>
                 </main>
                 <footer>
