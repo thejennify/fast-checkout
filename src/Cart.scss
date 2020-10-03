@@ -1,0 +1,38 @@
+.cart{
+    padding: 1rem;
+    margin:1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-header{
+    border-bottom: .1rem #c0c0c0 solid;
+}
+
+.cart-items{
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+
+    img{
+        width: 5rem;
+    }
+    li{
+        display: flex;
+        font-weight: 300;
+
+        div{
+            padding: .5rem;
+        }
+    }
+}
+.total{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    div{
+        flex: 1;
+        font-size: 2rem;
+    }
+}
