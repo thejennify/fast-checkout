@@ -6,7 +6,8 @@
             "title": "elegant dress",
             "description": "elegant and sophisticated",
             "price": 39.99,
-            "sizes": [8, 9, 10]
+            "size": [8, 9, 10],
+            "type": "dress"
         },
         {
             "_id": "product3",
@@ -14,7 +15,8 @@
             "title": "opens stiletto",
             "description": "elegant and sophisticated",
             "price": 39.99,
-            "sizes": [8, 9, 10]
+            "size": [8, 9, 10],
+            "type":"skirt"
         },
         {
             "_id": "product4",
@@ -22,7 +24,8 @@
             "title": "shiffon jumsuit",
             "description": "elegant and sophisticated",
             "price": 69.99,
-            "sizes": [8, 9, 10, 14, 16, 18]
+            "size": [8, 9, 10, 14, 16, 18],
+            "type": "jumpsuite"
 
         },
         {
@@ -31,7 +34,8 @@
             "title": "shiffon jumsuit",
             "description": "elegant and sophisticated",
             "price": 69.99,
-            "sizes": [8, 9, 10, 14, 16, 18]
+            "size": [8, 9, 10, 14, 16, 18],
+            "type": "dress"
 
         },
         {
@@ -40,7 +44,8 @@
             "title": "shiffon jumsuit",
             "description": "elegant and sophisticated",
             "price": 69.99,
-            "sizes": [8, 9, 10, 14, 16, 18]
+            "size": [8, 9, 10, 14, 16, 18],
+            "type": "jumpsuite"
 
         },
         {
@@ -49,7 +54,8 @@
             "title": "shiffon jumsuit",
             "description": "elegant and sophisticated",
             "price": 45.99,
-            "sizes": [8, 9, 10, 14, 16, 18]
+            "size": [8, 9, 10, 14, 16, 18],
+            "type": "jacket"
 
         },
         {
@@ -58,7 +64,8 @@
             "title": "shiffon jumsuit",
             "description": "elegant and sophisticated",
             "price": 59.99,
-            "sizes": [8, 9, 10, 14, 16, 18]
+            "size": [8, 9, 10, 14, 16, 18],
+            "type": "jacket"
 
         }
     ]
