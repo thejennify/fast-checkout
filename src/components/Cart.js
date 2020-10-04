@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import formatCurrency from './util';
 import Checkout from './Checkout';
 import '../Cart.scss';
-import '../Checkout.scss'
+import '../Checkout.scss';
+import Fade from 'react-reveal/Fade';
 
 class Cart extends Component {
     state = {
@@ -16,7 +17,7 @@ class Cart extends Component {
         this.setState({[e.target.name]: e.target.value})
     }
 
-    crateOrder = (e) => {
+    createOrder = (e) => {
         e.preventDefault();
             const order = {
                 name: this.state.name,
@@ -38,6 +39,7 @@ class Cart extends Component {
                     )}
                 </div>
                 <div className='cart'>
+                <Fade left cascade>
                 {cartItems.length === 0? 
                 (<img src="https://img.icons8.com/ios/100/000000/favorite-cart.png" alt='empty shopping cart' className='cart-svg'/>) :
                     (<ul className='cart-items'>
@@ -47,7 +49,7 @@ class Cart extends Component {
                                 <img src={cartItem.image} alt={cartItem.title} />
                             </div>
                             <div>
-                                <div>{cartItem.title}</div>
+                                <div className='title'>{cartItem.title}</div>
                                 <div className='right price'> 
                                     {formatCurrency(cartItem.price)} x {cartItem.count}{' '}
                                     <button onClick={() => this.props.removeFromCart(cartItem)} className='button'>
@@ -60,6 +62,7 @@ class Cart extends Component {
                     )}
                     </ul>
                     )}
+                    </Fade>
                 </div>
                 <div>
                     {cartItems.length !== 0 && (
@@ -73,8 +76,8 @@ class Cart extends Component {
                                 </div>
                                 <button onClick={() => {this.setState({displayCheckoutForm: true});
                                 }}
-                                className='button primary' >
-                                Proceed
+                                className='button outline' >
+                                Continue
                                 </button>
                             </div>
                             {this.state.displayCheckoutForm && (
@@ -86,7 +89,7 @@ class Cart extends Component {
                                 </div>
                             )}
                         </div>
-                    )};
+                    )}
                 </div>
             </div>
         );

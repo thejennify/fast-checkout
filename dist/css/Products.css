@@ -11,7 +11,7 @@
 }
 
 .products {
-  padding: 0;
+  padding-bottom: 5rem;
   margin: 0;
   list-style-type: none;
   -ms-flex-wrap: wrap;
@@ -45,12 +45,13 @@
   max-height: 40rem;
 }
 
-.product a {
+.title {
+  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   outline: none;
   text-decoration: none;
-  font-weight: 500;
-  color: #000;
+  outline: none;
+  font-size: 1.5rem;
 }
 
 .product-price {
@@ -84,13 +85,63 @@ div {
   outline: none;
 }
 
-.button .primary {
-  background-color: #f0c040;
+.full {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 2rem;
 }
 
-.button:hover {
+.outline {
+  outline: 2px solid #000;
+  color: #000;
+  font-weight: 700;
+}
+
+.primary:hover,
+.outline:hover {
   border: 0.1rem #000 solid;
   background-color: #000;
   color: white;
+}
+
+.product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product-info img {
+  max-width: 100vw;
+  max-height: 70vh;
+}
+
+.product-info .info-right {
+  margin: 3rem 5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+}
+
+.product-info .title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.product-info .size {
+  border-radius: 50%;
+  padding: 1rem;
+  min-height: 5rem;
+  min-width: 5rem;
+  margin: .5rem;
+}
+
+.product-info .product-info-description {
+  border-top: 1px solid #c0c0c0;
+  margin: 3rem auto;
+  width: 100%;
+  opacity: 80%;
 }
 /*# sourceMappingURL=Products.css.map */

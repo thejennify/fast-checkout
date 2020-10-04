@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+.grid-container a, footer a {
+  text-decoration: none;
+  outline: none;
+  text-decoration: none !important;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -26,7 +32,7 @@ body,
 }
 
 a:hover {
-  color: #ff8000;
+  opacity: 90%;
 }
 
 header {
@@ -45,8 +51,7 @@ header {
 }
 
 header a {
-  color: #fff;
-  text-decoration: none;
+  color: white;
 }
 
 main {
@@ -65,10 +70,14 @@ main {
 }
 
 .main {
-  -webkit-box-flex: 3;
-      -ms-flex: 3 49rem;
-          flex: 3 49rem;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 39rem;
+          flex: 4 39rem;
   height: 100vh;
+}
+
+.main a {
+  color: #000;
 }
 
 .sidebar {
@@ -79,7 +88,9 @@ main {
       align-self: flex-start;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
+  background-color: rgba(246, 246, 246, 0.8);
+  border-bottom-left-radius: 30px;
 }
 
 footer {
@@ -97,6 +108,19 @@ footer {
           align-items: center;
   background-color: #000;
   color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: .2rem;
+}
+
+footer a {
+  margin-left: .5rem;
+  color: #ffc7c7;
+}
+
+footer a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media only screen and (max-width: 767px) {

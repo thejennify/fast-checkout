@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
+%normalize_link {
+    text-decoration: none;
+    outline: none;
+    text-decoration: none !important;
+}
 
 //Typefaces
 $headers: 'Montserrat', sans-serif;
@@ -32,10 +37,14 @@ body,
     grid-template-rows: 5rem 1fr 5rem;
     grid-template-columns: 1fr;
     height: 100%;
+
+    a {
+        @extend %normalize_link;
+    }
 }
 
 a:hover {
-    color: #ff8000;
+    opacity: 90%;
 }
 
 header{
@@ -45,10 +54,9 @@ header{
     display: flex;
     align-items: center;
     padding: .5rem;
-    
-    a {
-        color: #fff;
-        text-decoration: none;
+     
+    a{
+        color: white;
     }
 
 }
@@ -63,15 +71,21 @@ main {
     overflow: auto;
 }
 .main{
-    flex: 3 49rem;
+    flex: 4 39rem;
     height: 100vh;
+ 
+    a{
+        color: #000;
+    }
 }
 
 .sidebar{
     flex: 1 20rem;
     align-self: flex-start;
     position: sticky;
-    top: 0;
+    top: 0px;
+    background-color: rgba($color: #f6f6f6, $alpha: .8);
+    border-bottom-left-radius: 30px;
 
 }
 
@@ -82,6 +96,17 @@ footer {
     align-items: center;
     background-color: $primary;
     color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    a{
+        @extend %normalize_link;
+        margin-left: .5rem;
+        color: #ffc7c7;
+    }
+    a:hover{
+        transform: scale(1.1);
+    }
 }
 
 //media Queries

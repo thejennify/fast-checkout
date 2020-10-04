@@ -31,10 +31,9 @@ export default class Checkout extends Component {
                         />
                     </li>
                     <li>
-                        <button type='submit' className='button primary'>Checkout</button>
+                        <button type='submit' className='button full'>Checkout</button>
                     </li>
-                </ul>
-                
+                </ul>  
             </form>
         )
     }

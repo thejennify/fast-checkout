@@ -8,8 +8,9 @@
 .filter {
 @extend %flex-center;
 padding: 1rem;
-margin: 1rem;
-border-bottom: 0.1rem #c0c0c0 solid;
+margin: 1rem 4rem;
+border-bottom: 0.1rem #f6f6f6 solid;
+
 
 
     div{
@@ -18,6 +19,9 @@ border-bottom: 0.1rem #c0c0c0 solid;
 
     select{
         outline: none;
-  
-    }   
+        padding: .5rem;
+        margin-left: .5rem;
+        border-radius: 15px;
+    } 
+ 
 }

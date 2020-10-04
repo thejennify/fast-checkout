@@ -60,7 +60,7 @@ class App extends React.Component {
             products: this.state.products.slice().sort((a, b) => 
             sortValue === 'lowest'? 
                 a.price > b.price? 1: -1
-           :sortValue === 'highest' ? 
+            :sortValue === 'highest' ? 
                 a.price < b.price? 1: -1
             :a._id > b._id ?
                 1 : -1
@@ -118,7 +118,8 @@ class App extends React.Component {
                     </div>
                 </main>
                 <footer>
-                    Footer 
+                    Copyright {new Date().getFullYear()}, designed and developed by 
+                     <a href='https://github.com/thejennify' className='credits'> Jennify</a>
                 </footer>
             </div>
         );
