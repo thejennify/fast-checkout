@@ -4,27 +4,27 @@
             "_id": "product1",
             "image":"./images/product1.jpeg",
             "title": "Elegant Dress",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 39.99,
-            "size": [8, 9, 10],
+            "sizes": [8, 9, 10],
             "type": "dress"
         },
         {
             "_id": "product3",
             "image":"./images/product3.jpeg",
             "title": "Opens Stiletto",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 39.99,
-            "size": [8, 9, 10],
+            "sizes": [8, 9, 10],
             "type":"skirt"
         },
         {
             "_id": "product4",
             "image":"./images/product4.jpeg",
             "title": "Shiffon Jumsuite",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 69.99,
-            "size": [8, 9, 10, 14, 16, 18],
+            "sizes": [8, 9, 10, 14, 16, 18],
             "type": "jumpsuite"
 
         },
@@ -32,9 +32,9 @@
             "_id": "product5",
             "image":"./images/product5.jpeg",
             "title": "shiffon jumsuit",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 69.99,
-            "size": [8, 9, 10, 14, 16, 18],
+            "sizes": [8, 9, 10, 14, 16, 18],
             "type": "dress"
 
         },
@@ -42,9 +42,9 @@
             "_id": "product6",
             "image":"./images/product6.jpeg",
             "title": "shiffon jumsuit",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 69.99,
-            "size": [8, 9, 10, 14, 16, 18],
+            "sizes": [8, 9, 10, 14, 16, 18],
             "type": "jumpsuite"
 
         },
@@ -52,9 +52,9 @@
             "_id": "product7",
             "image":"./images/product7.jpeg",
             "title": "shiffon jumsuit",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 45.99,
-            "size": [8, 9, 10, 14, 16, 18],
+            "sizes": [8, 9, 10, 14, 16, 18],
             "type": "jacket"
 
         },
@@ -62,9 +62,9 @@
             "_id": "product8",
             "image":"./images/product8.jpeg",
             "title": "shiffon jumsuit",
-            "description": "elegant and sophisticated",
+            "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
             "price": 59.99,
-            "size": [8, 9, 10, 14, 16, 18],
+            "sizes": [8, 9, 10, 14, 16, 18],
             "type": "jacket"
 
         }

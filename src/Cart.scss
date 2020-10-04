@@ -9,9 +9,6 @@
     text-align: center
     }
 } 
-.cart-header{
-    border-bottom: .1rem #c0c0c0 solid;
-}
 
 .cart-items{
     padding: 0;
@@ -28,8 +25,14 @@
         div{
             padding: .5rem;
         }
+        .price{
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: .1rem;
+        }
     }
 }
+
 .total{
     display:flex;
     justify-content: space-between;
