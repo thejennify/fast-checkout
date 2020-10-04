@@ -1,8 +1,33 @@
-import React, { Component } from 'react'
-import formatCurrency from './util'
-import '../Cart.scss'
+import React, { Component } from 'react';
+import formatCurrency from './util';
+import Checkout from './Checkout';
+import '../Cart.scss';
+import '../Checkout.scss'
 
- class Cart extends Component {
+class Cart extends Component {
+    state = {
+        email: '',
+        name: '',
+        address: '',
+        displayCheckoutForm: false
+    };
+
+    handleChange = (e) => {
+        this.setState({[e.target.name]: e.target.value})
+    }
+
+    crateOrder = (e) => {
+        e.preventDefault();
+            const order = {
+                name: this.state.name,
+                email: this.state.email,
+                address: this.state.address,
+                cartItems: this.props.cartItems
+            };
+        this.props.createOrder(order);
+    }
+    
+
     render() {
         const {cartItems} = this.props;
         return (
@@ -13,7 +38,9 @@ import '../Cart.scss'
                     )}
                 </div>
                 <div className='cart'>
-                    <ul className='cart-items'>
+                {cartItems.length === 0? 
+                (<img src="https://img.icons8.com/ios/100/000000/favorite-cart.png" alt='empty shopping cart' className='cart-svg'/>) :
+                    (<ul className='cart-items'>
                     {cartItems.map(cartItem => (
                         <li key={cartItem._id}>
                             <div className ='cart-item'>
@@ -32,24 +59,38 @@ import '../Cart.scss'
                     )
                     )}
                     </ul>
+                    )}
                 </div>
-                {cartItems.length !== 0 && (
-                <div className='cart'>
-                    <div className='total'>
-                        <div>
-                        Total: {''}
-                        {formatCurrency(
-                            cartItems.reduce((a, c) => a + (c.price * c.count), 0)
-                        )}
+                <div>
+                    {cartItems.length !== 0 && (
+                        <div className='cart'>
+                            <div className='total'>
+                                <div>
+                                Total: {''}
+                                {formatCurrency(
+                                    cartItems.reduce((a, c) => a + (c.price * c.count), 0)
+                                )}
+                                </div>
+                                <button onClick={() => {this.setState({displayCheckoutForm: true});
+                                }}
+                                className='button primary' >
+                                Proceed
+                                </button>
+                            </div>
+                            {this.state.displayCheckoutForm && (
+                                <div className='form-container'>
+                                    <Checkout 
+                                        handleChange={this.handleChange}  
+                                        createOrder={this.createOrder}
+                                    />
+                                </div>
+                            )}
                         </div>
-                        <button className='button primary'>
-                        Proceed
-                        </button>
-                    </div>
+                    )};
                 </div>
-                )}
             </div>
         );
     }
 }
+
 export default Cart;
