@@ -7,15 +7,21 @@ import Cart from './components/Cart'
 
 
 class App extends React.Component {
+
     state = {
         products: data.products,
         type: '',
         sortRange: '',
         item: '',
-        cartItems: []
+        cartItems: localStorage.getItem('cartItems') ?
+                   JSON.parse(localStorage.getItem('cartItems')) 
+                   :[]
     };
 
-    //############ functions ##############
+    //############ functions #############
+    createOrder = (order) => {
+        alert('Need to save order for' + order.name);
+    };
 
     addToCart=(product)=>{
     //clone cart items
@@ -32,14 +38,18 @@ class App extends React.Component {
             cartItems.push({...product, count: 1})
         }
         this.setState({cartItems});
+        //converst cart item from onject to string and tore it in DB
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }
 
     removeFromCart = (product) =>{
         //creare a new instance of cartitems inside this function 
         const cartItems = this.state.cartItems.slice();
+        const savedItem = cartItems.filter(item => item._id !== product._id);
         this.setState({
-            cartItems: cartItems.filter(item => item._id !== product._id)
-        })
+            cartItems: savedItem
+        });
+        localStorage.setItem('cartItems', JSON.stringify(savedItem));
     }
 
     //lowest to highest and higest to lowest sorting 
@@ -101,7 +111,8 @@ class App extends React.Component {
                         <div className='sidebar'>
                             <Cart 
                                 cartItems={this.state.cartItems}
-                                removeFromCart={this.removeFromCart} 
+                                removeFromCart={this.removeFromCart}
+                                createOrder={this.createOrder}
                             />
                         </div>
                     </div>

@@ -22,7 +22,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 29rem;
           flex: 0 1 29rem;
-  height: 47rem;
+  height: 50rem;
   padding: 2rem;
 }
 
@@ -41,15 +41,15 @@
 }
 
 .product img {
-  min-width: auto;
-  max-height: 37rem;
+  min-width: 35rem;
+  max-height: 40rem;
 }
 
 .product a {
   font-family: 'Montserrat', sans-serif;
   outline: none;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   color: #000;
 }
 
@@ -90,5 +90,7 @@ div {
 
 .button:hover {
   border: 0.1rem #000 solid;
+  background-color: #000;
+  color: white;
 }
 /*# sourceMappingURL=Products.css.map */

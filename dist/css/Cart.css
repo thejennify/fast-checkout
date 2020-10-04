@@ -8,6 +8,12 @@
       flex-wrap: wrap;
 }
 
+.cart .cart-svg {
+  width: 8rem;
+  margin: 3rem;
+  text-align: center;
+}
+
 .cart-header {
   border-bottom: .1rem #c0c0c0 solid;
 }

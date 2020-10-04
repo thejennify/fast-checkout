@@ -1,0 +1,27 @@
+.form-container {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.form-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.form-container input {
+  padding: 1rem;
+  border: .1rem #c0c0c0 solid;
+  outline: none;
+}
+
+.form-container input:hover {
+  outline: 1px solid black;
+}
+/*# sourceMappingURL=Checkout.css.map */
