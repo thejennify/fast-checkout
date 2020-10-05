@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/thejennify/fast-checkout/static/css/main.56f71c31.chunk.css",
+    "main.js": "/thejennify/fast-checkout/static/js/main.b0c7d826.chunk.js",
+    "main.js.map": "/thejennify/fast-checkout/static/js/main.b0c7d826.chunk.js.map",
+    "runtime-main.js": "/thejennify/fast-checkout/static/js/runtime-main.4a00ba5a.js",
+    "runtime-main.js.map": "/thejennify/fast-checkout/static/js/runtime-main.4a00ba5a.js.map",
+    "static/js/2.f15fb343.chunk.js": "/thejennify/fast-checkout/static/js/2.f15fb343.chunk.js",
+    "static/js/2.f15fb343.chunk.js.map": "/thejennify/fast-checkout/static/js/2.f15fb343.chunk.js.map",
+    "index.html": "/thejennify/fast-checkout/index.html",
+    "precache-manifest.9681f5214f4de1089434dd60f7f37e6b.js": "/thejennify/fast-checkout/precache-manifest.9681f5214f4de1089434dd60f7f37e6b.js",
+    "service-worker.js": "/thejennify/fast-checkout/service-worker.js",
+    "static/css/main.56f71c31.chunk.css.map": "/thejennify/fast-checkout/static/css/main.56f71c31.chunk.css.map",
+    "static/js/2.f15fb343.chunk.js.LICENSE.txt": "/thejennify/fast-checkout/static/js/2.f15fb343.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a00ba5a.js",
+    "static/js/2.f15fb343.chunk.js",
+    "static/css/main.56f71c31.chunk.css",
+    "static/js/main.b0c7d826.chunk.js"
+  ]
+}
