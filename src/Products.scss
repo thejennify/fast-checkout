@@ -78,7 +78,9 @@ div{
     color: #000;
     font-weight: 700;
 }
-
+.primary{
+    font-weight: 700;
+}
 .primary:hover,
 .outline:hover{
     border: 0.1rem #000 solid;
@@ -120,7 +122,6 @@ div{
         border-top: 1px solid #c0c0c0;
         margin: 3rem auto;
         width: 100%;
-        opacity: 80%;
 
     }
 
