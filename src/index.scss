@@ -43,10 +43,6 @@ body,
     }
 }
 
-a:hover {
-    opacity: 90%;
-}
-
 header{
     grid-area: header;
     color: #fff;
@@ -99,6 +95,8 @@ footer {
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: .2rem;
+    flex-wrap: wrap;
+
     a{
         @extend %normalize_link;
         margin-left: .5rem;

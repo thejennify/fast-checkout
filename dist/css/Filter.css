@@ -14,6 +14,8 @@
   padding: 1rem;
   margin: 1rem 2rem;
   border-bottom: 0.1rem #f6f6f6 solid;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filter div {

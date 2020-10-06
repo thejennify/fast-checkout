@@ -31,10 +31,6 @@ body,
   height: 100%;
 }
 
-a:hover {
-  opacity: 90%;
-}
-
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -111,6 +107,8 @@ footer {
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: .2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer a {
